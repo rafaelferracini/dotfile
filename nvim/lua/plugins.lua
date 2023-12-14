@@ -54,11 +54,6 @@ return require('packer').startup(function(use)
     })
 
     use("onsails/lspkind-nvim")
-    use({
-        "L3MON4D3/LuaSnip",
-        -- follow latest release.
-        tag = "v<CurrentMajor>.*",
-    })
 
     -- cmp: Autocomplete
     use({
@@ -134,6 +129,13 @@ return require('packer').startup(function(use)
             require("configs.gitsigns")
         end,
     })
+
+    -- LuaSnips
+    use({
+        "L3MON4D3/LuaSnip",
+        tag = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+        run = "make install_jsregexp"
+      })
 
     -- Markdown Preview
     use({

@@ -30,8 +30,8 @@ map("n", "<leader>e", "<CMD>Neotree toggle<CR>")
 map("n", "<leader>o", "<CMD>Neotree focus<CR>")
 
 -- Buffer
-map("n", "<TAB>", "<CMD>bnext<CR>")
-map("n", "<S-TAB>", "<CMD>bprevious<CR>")
+--map("n", "<TAB>", "<CMD>bnext<CR>")
+--map("n", "<S-TAB>", "<CMD>bprevious<CR>")
 
 -- Terminal
 map("n", "<leader>th", "<CMD>ToggleTerm size=10 direction=horizontal<CR>")
@@ -52,4 +52,12 @@ map("n", "<C-j>", "<C-w>j")
 map("n", "<C-Left>", "<C-w><")
 map("n", "<C-Right>", "<C-w>>")
 map("n", "<C-Up>", "<C-w>+")
-map("n", "<C-Down>", "<C-w>-")
+
+-- LuaSnips
+map("i", "jk", function() ls.jump( 1) end)
+map("i", "kj", function() ls.jump(-1) end)
+map("i", "<TAB>", function()
+        if ls.choice_active() then
+              ls.change_choice(1)
+        end
+    end)
