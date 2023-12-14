@@ -2,6 +2,8 @@ local function map(mode, lhs, rhs)
     vim.keymap.set(mode, lhs, rhs, { silent = true })
 end
 
+local ls = require("luasnip")
+
 local status, telescope = pcall(require, "telescope.builtin")
 if status then
     -- Telescope
@@ -30,8 +32,8 @@ map("n", "<leader>e", "<CMD>Neotree toggle<CR>")
 map("n", "<leader>o", "<CMD>Neotree focus<CR>")
 
 -- Buffer
---map("n", "<TAB>", "<CMD>bnext<CR>")
---map("n", "<S-TAB>", "<CMD>bprevious<CR>")
+map("n", "<TAB>", "<CMD>bnext<CR>") -- "Next Tab"
+map("n", "<S-TAB>", "<CMD>bprevious<CR>") -- "Previous tab"
 
 -- Terminal
 map("n", "<leader>th", "<CMD>ToggleTerm size=10 direction=horizontal<CR>")
@@ -54,10 +56,13 @@ map("n", "<C-Right>", "<C-w>>")
 map("n", "<C-Up>", "<C-w>+")
 
 -- LuaSnips
-map("i", "jk", function() ls.jump( 1) end)
-map("i", "kj", function() ls.jump(-1) end)
-map("i", "<TAB>", function()
-        if ls.choice_active() then
-              ls.change_choice(1)
-        end
-    end)
+vim.keymap.set({"i"}, "<C-K>", function() ls.expand() end, {silent = true})
+vim.keymap.set({"i", "s"}, "<C-J>", function() ls.jump( 1) end, {silent = true})
+vim.keymap.set({"i", "s"}, "<C-L>", function() ls.jump(-1) end, {silent = true})
+
+vim.keymap.set({"i", "s"}, "<C-E>", function()
+	if ls.choice_active() then
+		ls.change_choice(1)
+	end
+end, {silent = true})
+

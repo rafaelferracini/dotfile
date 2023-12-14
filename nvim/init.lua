@@ -1,7 +1,7 @@
 require("settings")
 require("plugins")
 require("maps")
-require("luasnip.loaders.from_lua").load({paths="$HOME/AppData/Local/nvim/LuaSnip"})
+require("luasnip.loaders.from_lua").load({paths="~/AppData/Local/nvim/LuaSnip"})
 
 
 -- colorscheme config: tokyonight
