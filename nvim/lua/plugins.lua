@@ -139,6 +139,9 @@ return require('packer').startup(function(use)
             require("configs.luasnip")
         end,
       })
+    
+    -- VimTex
+    use "lervag/vimtex"
 
     -- Markdown Preview
     use({

@@ -3,8 +3,6 @@
 local global = vim.g
 local o = vim.o
 
-vim.scriptencoding = "utf-8"
-
 -- Map <leader>: Configura a tecla <leader> para " "
 
 global.mapleader = " "
@@ -34,3 +32,4 @@ o.updatetime = 100 -- Tempo em milisegundos para considerar as mudanças
 o.splitright = true -- Ao fazer split horizontal, será para a direita
 o.splitbelow = true -- Ao fazer split vertical, será para baixo
 o.mouse = "a" -- Habilita o mouse para todos modos de uso
+
