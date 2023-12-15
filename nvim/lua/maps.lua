@@ -32,8 +32,8 @@ map("n", "<leader>e", "<CMD>Neotree toggle<CR>")
 map("n", "<leader>o", "<CMD>Neotree focus<CR>")
 
 -- Buffer
-map("n", "<TAB>", "<CMD>bnext<CR>") -- "Next Tab"
-map("n", "<S-TAB>", "<CMD>bprevious<CR>") -- "Previous tab"
+--map("n", "<TAB>", "<CMD>bnext<CR>") -- "Next Tab"
+--map("n", "<S-TAB>", "<CMD>bprevious<CR>") -- "Previous tab"
 
 -- Terminal
 map("n", "<leader>th", "<CMD>ToggleTerm size=10 direction=horizontal<CR>")
@@ -56,9 +56,9 @@ map("n", "<C-Right>", "<C-w>>")
 map("n", "<C-Up>", "<C-w>+")
 
 -- LuaSnips
-vim.keymap.set({"i"}, "<C-K>", function() ls.expand() end, {silent = true})
-vim.keymap.set({"i", "s"}, "<C-J>", function() ls.jump( 1) end, {silent = true})
-vim.keymap.set({"i", "s"}, "<C-L>", function() ls.jump(-1) end, {silent = true})
+vim.keymap.set({"i"}, "jk", function() ls.expand() end, {silent = true})
+vim.keymap.set({"i", "s"}, "<TAB>", function() ls.jump( 1) end, {silent = true})
+vim.keymap.set({"i", "s"}, "<S-TAB>", function() ls.jump(-1) end, {silent = true})
 
 vim.keymap.set({"i", "s"}, "<C-E>", function()
 	if ls.choice_active() then
