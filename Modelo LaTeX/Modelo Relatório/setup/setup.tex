@@ -14,7 +14,6 @@
 \RequirePackage{pdfpages}  % Allow to includes pdf files 
 \RequirePackage{csquotes}  % Quotations facility package 
 \RequirePackage[
-    
     subentrycounter,
     seeautonumberlist,
     nonumberlist,
@@ -24,16 +23,9 @@
     acronym,
     translate=babel,
     nopostdot
-
 ]{glossaries}  % glossaries
 
 % ----------------------------
-
-% Formating autoref for equations. "Equation (n)"
-\counterwithout{equation}{chapter}
-\def\equationautorefname~#1\null{
-  Equação~(#1)\null
-%-----------------------------
 
 
 % ---
@@ -43,7 +35,271 @@
 % Reduces the vertical space before the glossary by 0.2cm
 \renewcommand{\glossarypreamble}{\vspace{-0.2cm}}
 
+% Stylish
+\newglossarystyle{mylong1}{
+	\setglossarystyle{long}
+	\renewenvironment{theglossary}
+    {\begin{longtable}[l]{@{}p{\dimexpr 3.0cm-\tabcolsep}p{0.78\hsize}}}
+    {\end{longtable}}
+}
+
+\newglossarystyle{mylong2}{
+	\setglossarystyle{long}
+	\renewenvironment{theglossary}
+    {\begin{longtable}[l]{@{}p{\dimexpr 2.0cm-\tabcolsep}p{0.86\hsize}}}
+    {\end{longtable}}
+}
+
+% New glossary with NAME-TITLE-FILETYPE-TEXTNAME
+\newglossary{simbolos}{simbolos}{sbl}{simbolos}
+
+% Acronym creation: \siglalista{acronym}{meaning}
+\newcommand{\siglalista}[2]{\newacronym{#1}{#1}{#2}}
+
+% Glossary input creations: \simbololist{identification}{name}{description}
+\newcommand{\simbololista}[3]{\newglossaryentry{#1}{
+  type=simbolo,
+  name=#2,
+  description=#3
+  }
+}
+
+%-----------------------------
 
 
+% ---
+%   Print commands
+% ---
+
+% Acronym list print
+\newcommand{\imprimirlistadesiglas}{
+  \pdfbookmark[0]{\listadesiglasname}{acn}
+  \printnoidxglossary[
+  style=mylong1,
+  type=acronym,
+  sort=letter,
+  title={\listadesiglasname\vspace{-0.2cm}}
+  ]
+  \cleardoublepage
+}
+
+% Symbol list print
+\newcommand{\imprimirlistadesimbolos}{
+  \pdfbookmark[0]{\listadesimbolosname}{sbl}
+  \printnoidxglossary[
+  style=mylong2,
+  type=simbolos,
+  sort=use,
+  title={\listadesimbolosname}
+  ]
+  \cleardoublepage
+}
+
+% Glossary print
+\newcommand{\imprimirglossario}{
+  \cleardoublepage
+  \pdfbookmark[0]{\glossaryname}{glo}
+  \printnoidxglossary[
+  type=main,
+  sort=use,
+  title={\glossaryname}
+  ]
+}
+
+% Cover print
+\renewcommand{\imprimircapa}{
+  \begin{capa}
+    \OnehalfSpacing
+    \centering
+    \includegraphics{width=1.84cm, keepaspectratio}{setup/vertical_sigla_fundo_claro}\par
+    \MakeTextUppercase{\imprimirinstituicao}\par
+    \MakeTextUppercase{\imprimircentro}\par
+    \MakeTextUppercase{\imprimirprograma}\par
+    \vspace*{5\baselineskip}
+    \imprimirautor\par
+    \vspace*{8\baselineskip}
+    \textbf{\imprimirtitulo}
+    \ifnotempty{\imprimirsubtitulo}{:~\imprimirsubtitulo}\par
+    \vfill
+    {
+      \imprimirlocal\par
+      \imprimirano\par
+    }
+  \end{capa}
+}
+
+%-----------------------------
 
 
+% ---
+%   Stylish
+% ---
+
+% Formating autoref for equations. "Equation (n)"
+\counterwithout{equation}{chapter}
+\def\equationautorefname~#1\null{
+  Equação~(#1)\null
+
+% Make section printed in uppercase
+\makeatletter
+\let\oldcontentsline\contentsline
+\def\contentsline#1#2{
+  \expandafter\ifx\csname l@#1\endcsname\l@section
+  \expandafter\@firstoftwo
+  \else
+  \expandafter\@secondoftwo
+  \fi
+  {
+    \oldcontentsline{#1}{\MakeTextUppercase{#2}}
+  }{
+    \oldcontentsline{#1}{#2}
+  }
+}
+
+% Set distance from top of page to first float
+\setlength{\@fptop}{5pt}
+\makeatother
+
+% Justify correction
+\emergencystretch 3em
+
+% Lines and paragraphs spacing
+\setlength{\parindent}{1.25cm}  % Paragprah lenght
+\setlength{\parskip}{0.0cm}  % Spacing between paragraphs 
+\setlength{\afterchapskip}{\onelineskip}  % Before title spacing
+\setlength{\ABNTEXcitacaorecuo}{3cm}  % Quotes indentation (3 + 1) 
+
+% Font: Chapter, parte, section, subsection, subsubsection
+\renewcommand{\ABNTEXchapterfont}{\sffamily\fontseries{bx}\fontshape{n}\selectfont}
+\renewcommand{\ABNTEXchapterfontsize}{\normalsize\selectfont}
+\renewcommand{\ABNTEXpartfont}{\sffamily\fontseries{bx}\fontshape{n}\selectfont} 
+\renewcommand{\ABNTEXpartfontsize}{\Huge\selectfont}
+\renewcommand{\ABNTEXsectionfont}{\sffamily\fontseries{m}\fontshape{n}\selectfont}
+\renewcommand{\ABNTEXsectionfontsize}{\normalsize\selectfont}
+\renewcommand{\ABNTEXsubsectionfont}{\sffamily\fontseries{b}\fontshape{n}\selectfont}
+\renewcommand{\ABNTEXsubsectionfontsize}{\normalsize\selectfont}
+\renewcommand{\ABNTEXsubsubsectionfont}{\sffamily\fontseries{m}\fontshape{n}\selectfont}
+\renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize\selectfont}
+\renewcommand{\ABNTEXsubsubsubsectionfont}{\sffamily\fontseries{m}\fontshape{it}\selectfont}
+\renewcommand{\ABNTEXsubsubsubsectionfontsize}{\normalsize\selectfont}
+\expandafter\def\expandafter\epigrafe\expandafter{\epigrafe\ABNTEXfontereduzida}
+
+% Summary style
+\setlength{\cftbeforechapterskip}{0pt}
+
+\renewcommand{\cftpartfont}{\ABNTEXpartfont}
+\renewcommand{\cftpartpagefont}{\cftpartfont}
+
+\renewcommand{\cftchapterfont}{\ABNTEXchapterfont}
+\renewcommand{\cftchapterpagefont}{\cftchapterfont}
+
+\renewcommand{\cftsectionfont}{\ABNTEXsectionfont}
+\renewcommand{\cftsectionpagefont}{\cftsectionfont}
+
+\renewcommand{\cftsubsectionfont}{\ABNTEXsubsectionfont}
+\renewcommand{\cftsubsectionpagefont}{\cftsubsectionfont}
+
+\renewcommand{\cftsubsubsectionfont}{\ABNTEXsubsubsectionfont}
+\renewcommand{\cftsubsubsectionpagefont}{\cftsubsubsectionfont}
+
+\renewcommand{\cftparagraphfont}{\ABNTEXsubsubsubsectionfont}
+\renewcommand{\cftparagraphpagefont}{\cftparagraphfont}
+
+% Folha de rosto
+\makeatletter
+\renewcommand{\folhaderostocontent}{
+	\OnehalfSpacing
+	\centering   
+	\vbox to 10cm{
+		\imprimirautor\par 
+		\vspace*{\fill}
+		\textbf{\imprimirtitulo}
+		\abntex@ifnotempty{\imprimirsubtitulo}{:~\imprimirsubtitulo}\par 
+	}
+	\vspace*{\fill}
+	\abntex@ifnotempty{\imprimirpreambulo}{
+		\begin{adjustwidth*}{8cm}{}
+			\begin{SingleSpace}
+				{\footnotesize\imprimirpreambulo\par
+					\imprimirorientadorRotulo:~\imprimirorientador\par
+					\abntex@ifnotempty{\imprimircoorientador}{\imprimircoorientadorRotulo:~\imprimircoorientador}}\par
+			\end{SingleSpace}
+		\end{adjustwidth*}
+	}
+	\vspace*{\fill}
+	\imprimirlocal\par
+	\imprimirano 
+}
+\makeatother
+
+%-----------------------------
+
+
+% ---
+%   Commands setup
+% ---
+
+% New conditional commands
+\newcommand{\ifnotempty}[2]{\ifthenelse{\not\equal{#1}{}}{#2}{}}
+\newcommand{\ifnotdefined}[3]{\ifdefined #1 #3 \lese #2 \fi}
+
+% Data commands
+\providecommand{\imprimirsubtitulo}{}
+\newcommand{\subtitulo}[1]{\renewcommand{\imprimirsubtitulo}{#1}}
+
+\providecommand{\imprimirprograma}{}
+\newcommand{\programa}[1]{\renewcommand{\imprimirprograma}{#1}}
+
+\providecommand{\imprimirformacao}{}
+\newcommand{\formacao}[1]{\renewcommand{\imprimirformacao}{#1}}
+
+\providecommand{\imprimirnivel}{}
+\newcommand{\nivel}[1]{\renewcommand{\imprimirnivel}{#1}}
+
+\providecommand{\imprimirarea}{}
+\newcommand{\area}[1]{\renewcommand{\imprimirarea}{#1}}
+
+\providecommand{\imprimirinstituicaosigla}{}
+\newcommand{\instituicaosigla}[1]{\renewcommand{\imprimirinstituicaosigla}{#1}}
+
+\providecommand{\imprimirano}{}
+\newcommand{\ano}[1]{\renewcommand{\imprimirano}{#1}}
+
+\providecommand{\imprimircentro}{}
+\newcommand{\centro}[1]{\renewcommand{\imprimircentro}{#1}}
+
+\newcommand{\coordenadorname}{Coordenador}
+\providecommand{\imprimircoordenadorRotulo}{}
+\providecommand{\imprimircoordenador}{}
+\newcommand{\coordenador}[2][\coordenadorname]%
+{\renewcommand{\imprimircoordenadorRotulo}{#1}%
+	\renewcommand{\imprimircoordenador}{#2}}
+
+\addto\captionsbrazil{
+	\renewcommand{\bibname}{Referências}
+	\renewcommand{\indexname}{Índice}
+	\renewcommand{\listfigurename}{Lista de figuras}
+	\renewcommand{\listtablename}{Lista de tabelas}
+	\renewcommand{\orientadorname}{Orientador}
+	\renewcommand{\coorientadorname}{Coorientador}
+	\renewcommand{\pageautorefname}{página}
+	\renewcommand{\sectionautorefname}{Seção}
+	\renewcommand{\subsectionautorefname}{Seção}
+	\renewcommand{\paragraphautorefname}{Seção}
+	\renewcommand{\subsubsectionautorefname}{Seção}
+}
+
+% List of frames
+\newcommand{\quadroname}{Quadro}
+\newcommand{\listofquadrosname}{Lista de quadros}
+\newfloat[chapter]{quadro}{loq}{\quadroname}
+\newlistof{listofquadros}{loq}{\listofquadrosname}
+\newlistentry{quadro}{loq}{0}
+% ABNT rules
+\setfloatadjustment{quadro}{\centering}
+\counterwithout{quadro}{chapter}
+\renewcommand{\cftquadroname}{\quadroname\space} 
+\renewcommand*{\cftquadroaftersnum}{\hfill--\hfill}
+\setfloatlocations{quadro}{hbtp}
+
+%-----------------------------
