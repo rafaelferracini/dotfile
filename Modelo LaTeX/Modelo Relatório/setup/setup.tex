@@ -1,5 +1,5 @@
 % ---
-%   Pacotes básicos
+%   Basic Packages
 % ---
 
 \RequirePackage{lmodern}  % Latin Modern font
@@ -13,6 +13,36 @@
 \RequirePackage{fix-cm}  % Fix computer modern fonts and allow arbitrary size
 \RequirePackage{pdfpages}  % Allow to includes pdf files 
 \RequirePackage{csquotes}  % Quotations facility package 
+\RequirePackage[
+    
+    subentrycounter,
+    seeautonumberlist,
+    nonumberlist,
+    nogroupskip,
+    nomain,
+    shortcuts,
+    acronym,
+    translate=babel,
+    nopostdot
+
+]{glossaries}  % glossaries
+
+% ----------------------------
+
+% Formating autoref for equations. "Equation (n)"
+\counterwithout{equation}{chapter}
+\def\equationautorefname~#1\null{
+  Equação~(#1)\null
+%-----------------------------
+
+
+% ---
+%   Glossary package setup 
+% ---
+
+% Reduces the vertical space before the glossary by 0.2cm
+\renewcommand{\glossarypreamble}{\vspace{-0.2cm}}
+
 
 
 
