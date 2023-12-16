@@ -4,7 +4,7 @@
 
 \RequirePackage{lmodern}  % Latin Modern font
 \RequirePackage[T1]{fontenc}  % Font Encoding
-\RequirePackage[utf-8]{inputenc}  % Input Encoding
+\RequirePackage[utf8]{inputenc}  % Input Encoding
 \RequirePackage{indentfirst}  % AutoIndent first section paragraph
 \RequirePackage{color}  % Color
 \RequirePackage{graphicx}  % Graphics methods
@@ -58,8 +58,8 @@
 
 % Glossary input creations: \simbololist{identification}{name}{description}
 \newcommand{\simbololista}[3]{\newglossaryentry{#1}{
-  type=simbolo,
-  name=#2,
+  type=simbolos, 
+  name=#2, 
   description=#3
   }
 }
@@ -84,15 +84,15 @@
 }
 
 % Symbol list print
-\newcommand{\imprimirlistadesimbolos}{
-  \pdfbookmark[0]{\listadesimbolosname}{sbl}
-  \printnoidxglossary[
-  style=mylong2,
-  type=simbolos,
-  sort=use,
-  title={\listadesimbolosname}
-  ]
-  \cleardoublepage
+\newcommand{\imprimirlistadesimbolos}{%
+	\pdfbookmark[0]{\listadesimbolosname}{sbl}
+	\printnoidxglossary[
+	style=mylong2,
+	type=simbolos, 
+	sort=use,
+	title={\listadesimbolosname}
+	]
+	\cleardoublepage
 }
 
 % Glossary print
@@ -111,7 +111,7 @@
   \begin{capa}
     \OnehalfSpacing
     \centering
-    \includegraphics{width=1.84cm, keepaspectratio}{setup/vertical_sigla_fundo_claro}\par
+    \includegraphics[width=1.84cm,keepaspectratio]{setup/vertical_sigla_fundo_claro}\par
     \MakeTextUppercase{\imprimirinstituicao}\par
     \MakeTextUppercase{\imprimircentro}\par
     \MakeTextUppercase{\imprimirprograma}\par
@@ -139,6 +139,7 @@
 \counterwithout{equation}{chapter}
 \def\equationautorefname~#1\null{
   Equação~(#1)\null
+}
 
 % Make section printed in uppercase
 \makeatletter

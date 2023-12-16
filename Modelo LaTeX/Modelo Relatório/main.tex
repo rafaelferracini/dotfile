@@ -1,0 +1,199 @@
+%! TEX root = main.tex
+\documentclass[
+  12pt,  % font-size
+  oneside,  % Format every page equal
+  a4paper,  % Paper
+  %  ABNTex2 settings. TITLE is uppercase
+  chapter=TITLE, 
+  section=TITLE,
+  %subsection=TITLE,
+  %subsubsection=TITLE,
+  % Babel settings
+  english,
+  brazil
+]{abntex2}
+
+\usepackage{setup/setup}
+
+%------------------------------
+
+% ---
+%   Bibliography setting
+% ---
+
+\usepackage[backend=biber, style=numeric-comp]{biblatex}  % style=numeric-comp for numeric style
+
+\setlength\bibitemsep{\baselineskip}
+\DeclareFieldFormat{url}{Disponível~em:\addspace\url{#1}}
+\NewBibliographyString{sineloco}
+\NewBibliographyString{sinenomine}
+\DefineBibliographyStrings{brazil}{%
+	sineloco     = {\mkbibemph{S\adddot l\adddot}},
+	sinenomine   = {\mkbibemph{s\adddot n\adddot}},
+	andothers    = {\mkbibemph{et\addabbrvspace al\adddot}},
+	in			 = {\mkbibemph{In:}}
+}
+
+\addbibresource{aftertext/references.bib}
+
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+      \step[fieldset=abstract, null]
+      \step[fieldset=pagetotal, null]
+    }
+    \map{
+      \pertype{inproceedings}
+			\step[fieldset=venue, null]
+			\step[fieldset=eventdate, null]
+			\step[fieldset=eventtitle, null]
+			\step[fieldset=isbn, null]
+			\step[fieldset=volume, null]
+    }
+  }
+}
+
+%------------------------------
+
+
+% ---
+%   Cover informations
+% ---
+
+\autor{Nome completo do autor(a)}
+
+\titulo{Título do trabalho}
+
+\subtitulo{Substitulo (se houver)}
+
+\orientador{Prof. XXXXX, Dr.}
+%\orientador[Orientadora]{Prof. XXXXX, Dra.}
+
+\coorientador{Prof. XXXXX, Dr.}
+%\coorientador[Orientadora]{Prof. XXXX, Dra.}
+
+\coordenador{Prof. XXXX, Dr.}
+%\coodernador[Coordenadora]{Prof. XXXX, Dra.}
+
+\ano{Ano}
+\data{[dia] de [mês] de [ano]}
+
+\local{cidade}
+
+\instituicaosigla{UFSC}
+\instituicao{Universidade Federal de Santa Catarina}
+
+\tipotrabalho{Relatório projeto}
+
+\formacao{[licenciado/bacharel] em [nome do titulo obtido]}
+
+\nivel{[licenciado/bacharel]}
+
+\programa{Curso de Graduação em [XXXXXX]}
+
+\centro{Campus [XXXXX] Depertamento de [XXXXX]}
+
+\preambulo
+{
+  \imprimirtipotrabalho~do~\imprimirprograma~da\imprimirinstituicao~para~a~obtenção~do~título~de~\imprimirformacao.
+}
+
+%------------------------------
+
+
+% ---
+%   PDF settings
+% ---
+\definecolor{blue}{RGB}{41,5,195}
+\makeatletter
+\hypersetup{
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    pdfsubject={\imprimirpreambulo},
+    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={ufsc, latex, abntex2}, 
+		colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    filecolor=black,
+		urlcolor=black,
+		bookmarksdepth=4
+}
+\makeatother
+
+
+% ---
+%   Symbols and Acronym
+% ---
+
+% Acronym declaration
+\siglalista{ABNT}{Associação Brasileira de Normas Técnicas}
+
+% Symbol declaration
+\simbololista{C}{\ensuremath{C}}{Circunferência de um círculo}
+\simbololista{pi}{\ensuremath{\pi}}{Número pi} 
+\simbololista{r}{\ensuremath{r}}{Raio de um círculo}
+\simbololista{A}{\ensuremath{A}}{Área de um círculo}
+
+% Compile acronym and symbols
+\makenoidxglossaries
+
+% Compile index
+\makeindex
+
+%------------------------------
+
+%%%%%%%%%%%%%%%% DOCUMENT STARTS HERE %%%%%%%%%%%%%%%%
+
+\begin{document}
+  \selectlanguage{brazil}
+  \frenchspacing
+  \OnehalfSpacing
+
+
+  % ---
+  %   ELEMENTOS PRÉ-TEXTUAIS
+  % ---
+  %   Capa, folha de rosto, ficha bibliografica, errata, folha de aprovação, dedicatória, agradecimentos, epígrafe, resumos, lista
+  \input{beforetext/beforetext}
+
+  % ---
+  %   ELEMENTOS TEXTUAIS
+  % ---
+  \textual
+
+  % 1. Introdução
+  \include{chapters/1-chapter}
+
+  % n. Conclusão
+  \include{chapters/conclusao}
+
+
+  % ---
+  %   ELEMENTOS PÓS-TEXTUAIS
+  % ---
+  \postextual
+
+  % Referências bibliograficas
+  \begingroup
+    \SingleSpacing\printbibliography[title=REFERÊNCIAS]
+  \endgroup
+
+  % Glossário
+%  \glossary
+
+  % Apendices
+  \begin{apendicesenv}
+    \input{aftertext/apendice_a}
+  \end{apendicesenv}
+
+  % Anexos
+  \begin{anexosenv}
+    \input{aftertext/anexo_a}
+  \end{anexosenv}
+
+  % Indice Remissivo
+  %\phantompart
+  %\printindex
+
+\end{document}
