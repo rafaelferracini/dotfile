@@ -8,6 +8,7 @@ local o = vim.o
 global.mapleader = " "
 global.maplocalleader = " "
 
+
 -- Configurações de Aparências
 
 o.number = true -- Adiciona a numeração de linhas 

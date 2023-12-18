@@ -1,19 +1,19 @@
 # Fdb version 4
-["biber main"] 1702747546 "main.bcf" "main.bbl" "main" 1702751844 0
+["biber main"] 1702747546 "main.bcf" "main.bbl" "main" 1702906251 0
   "./aftertext/references.bib" 1702743848 2872 3f85b1ecd63b2022f2bbc6c00cb50d9d ""
-  "main.bcf" 1702751843 108897 3ab6d5cad1f7aef569c75ba915f0e5f8 "pdflatex"
+  "main.bcf" 1702906250 108897 3ab6d5cad1f7aef569c75ba915f0e5f8 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["makeindex main.idx"] 0 "main.idx" "main.ind" "main" 1702751844 -1
-  "main.idx" 1702751842 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex main.idx"] 0 "main.idx" "main.ind" "main" 1702906251 -1
+  "main.idx" 1702906248 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "main.ilg"
   "main.ind"
   (rewritten before read)
-["pdflatex"] 1702751840 "main.tex" "main.pdf" "main" 1702751844 0
-  "C:/Users/rafae/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1702750964 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["pdflatex"] 1702906246 "main.tex" "main.pdf" "main" 1702906251 0
+  "C:/Users/rafae/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1702902886 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/rafae/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1702577898 24175185 4243eb18ff2968674174671cff7aedcf ""
   "C:/Users/rafae/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
   "C:/Users/rafae/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc" 1256929440 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -211,20 +211,20 @@
   "aftertext/apendice_a.tex" 1702743825 1609 36507f5c8ec8bc950a84af5ce06c0b57 ""
   "beforetext/Ficha_Catalografica.pdf" 1702746489 7340 4060e335d28108b9c4a9687d208220af ""
   "beforetext/beforetext.tex" 1702751838 4087 7b599dda9955087193b39b41280fa944 ""
-  "chapters/1-chapter.aux" 1702751843 6207 a5ce21afff0198f44add7efe64217fc8 "pdflatex"
+  "chapters/1-chapter.aux" 1702906249 6207 a5ce21afff0198f44add7efe64217fc8 "pdflatex"
   "chapters/1-chapter.tex" 1702743910 2694 4152f44bed4017584c88d51ca0ed3be3 ""
-  "chapters/conclusao.aux" 1702751843 5629 46e2fa628ce61709280cdb1f6355580c "pdflatex"
+  "chapters/conclusao.aux" 1702906249 5629 46e2fa628ce61709280cdb1f6355580c "pdflatex"
   "chapters/conclusao.tex" 1702743896 218 236e4135f484556f126621cdf623619c ""
-  "main.aux" 1702751843 8891 756535cf654571f95252e8905fe5e6d9 "pdflatex"
+  "main.aux" 1702906250 8891 756535cf654571f95252e8905fe5e6d9 "pdflatex"
   "main.bbl" 1702747548 4144 c02159a4c6d574224d1f6d6377dc5b54 "biber main"
   "main.ind" 1702745009 0 d41d8cd98f00b204e9800998ecf8427e "makeindex main.idx"
-  "main.lof" 1702751843 58 29d9d42ff4957e64b6fbf83bd5f476ea "pdflatex"
-  "main.loq" 1702751843 82 addec94ebbf11eb0a1dd5a486218ab75 "pdflatex"
-  "main.lot" 1702751843 58 29d9d42ff4957e64b6fbf83bd5f476ea "pdflatex"
-  "main.run.xml" 1702751843 2419 c11a8a10576781858da5c09814bdc28e "pdflatex"
-  "main.tex" 1702751216 4217 5ecfc7b5d04598edc810902d165f9595 ""
-  "main.toc" 1702751843 2230 e703a2f74481eba43783d38ff68ff530 "pdflatex"
-  "setup/setup.sty" 1702751214 9120 920a1e77ad73b85b46ed388398aeb0d3 ""
+  "main.lof" 1702906250 58 29d9d42ff4957e64b6fbf83bd5f476ea "pdflatex"
+  "main.loq" 1702906250 82 addec94ebbf11eb0a1dd5a486218ab75 "pdflatex"
+  "main.lot" 1702906250 58 29d9d42ff4957e64b6fbf83bd5f476ea "pdflatex"
+  "main.run.xml" 1702906250 2419 c11a8a10576781858da5c09814bdc28e "pdflatex"
+  "main.tex" 1702906248 4217 5ecfc7b5d04598edc810902d165f9595 ""
+  "main.toc" 1702906250 2230 e703a2f74481eba43783d38ff68ff530 "pdflatex"
+  "setup/setup.sty" 1702906245 9244 28682d2fdd4520836df4bb0336aacd12 ""
   "setup/vertical_sigla_fundo_claro.pdf" 1702740461 51586 17e6b34529482ef5c908bfc04c901503 ""
   (generated)
   "chapters/1-chapter.aux"

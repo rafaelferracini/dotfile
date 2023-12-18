@@ -33,11 +33,13 @@
 % ---
 
 % Reduces the vertical space before the glossary by 0.2cm
+\glsnoexpandfields
 \renewcommand{\glossarypreamble}{\vspace{-0.2cm}}
 
 % Stylish
 \newglossarystyle{mylong1}{
 	\setglossarystyle{long}
+  \glsnoexpandfields
 	\renewenvironment{theglossary}
     {\begin{longtable}[l]{@{}p{\dimexpr 3.0cm-\tabcolsep}p{0.78\hsize}}}
     {\end{longtable}}
@@ -45,6 +47,7 @@
 
 \newglossarystyle{mylong2}{
 	\setglossarystyle{long}
+  \glsnoexpandfields
 	\renewenvironment{theglossary}
     {\begin{longtable}[l]{@{}p{\dimexpr 2.0cm-\tabcolsep}p{0.86\hsize}}}
     {\end{longtable}}
@@ -54,9 +57,11 @@
 \newglossary{simbolos}{simbolos}{sbl}{simbolos}
 
 % Acronym creation: \siglalista{acronym}{meaning}
+\glsnoexpandfields
 \newcommand{\siglalista}[2]{\newacronym{#1}{#1}{#2}}
 
 % Glossary input creations: \simbololist{identification}{name}{description}
+\glsnoexpandfields
 \newcommand{\simbololista}[3]{\newglossaryentry{#1}{
   type=simbolos, 
   name=#2, 
@@ -96,6 +101,7 @@
 }
 
 % Glossary print
+\glsnoexpandfields
 \newcommand{\imprimirglossario}{
   \cleardoublepage
   \pdfbookmark[0]{\glossaryname}{glo}
