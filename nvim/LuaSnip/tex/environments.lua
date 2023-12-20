@@ -1,7 +1,108 @@
 local line_begin = require("luasnip.extras.expand_conditions").line_begin
 
+local in_mathzone = function()
+  return vim.fn['vimtex#syntax#in_mathzone']() == 1
+end
+
+local helpers=require('luasnip-helper-funcs')
+local get_visual = helpers.get_visual
+
 return{
 
+
+--==========================
+--    MATH ENVIRONMENTS
+--==========================
+  s({trig="mm", dscr="Inline math", snippetType="autosnippet"},
+    fmta(
+      [[
+        $ <> $ 
+      ]], 
+      { i(1) }
+    )
+  ),
+    
+  s({trig="nn", dscr="Equation environtment", snippetType="autosnippet"},
+    fmta(
+      [[
+        \begin{equation}
+          <>
+        \end{equation}
+
+      ]], 
+      { i(1) }
+    ),
+    {condition = line_begin}
+  ),
+
+  s({trig="pmat", dscr="Parenthesis Matrix", snippetType="autosnippet"},
+    fmta(
+      [[
+        \begin{pmat}
+          \item <>
+        \end{pmate}
+
+      ]], 
+      { i(1) }
+    ), {condition = line_begin}
+  ),
+
+  s({trig="bmat", dscr="Braket Matrix", snippetType="autosnippet"},
+    fmta(
+      [[
+        \begin{bmat}
+          \item <>
+        \end{bmate}
+
+      ]], 
+      { i(1) }
+    ), {condition = line_begin}
+  ),
+
+  s({trig="cases", dscr="cases", snippetType="autosnippet"},
+    fmta(
+      [[
+        \begin{cases}
+          <>
+        \end{cases}
+      ]], 
+      { i(1) }
+    ), {condition = in_mathzone}
+  ),
+
+--==========================
+--         TEXT
+--==========================
+  s({trig="tt", dscr="Text", snippetType="autosnippet"},
+    fmta(
+      [[
+        \text{<>} 
+      ]], 
+      { i(1) }
+    ), {condition = in_mathzone}
+  ),
+    
+  s({trig="tbf", dscr="Bold Text", snippetType="autosnippet"},
+    fmta(
+      [[
+        \textbf{<>} 
+      ]], 
+      { i(1) }
+    )  
+  ),
+
+  s({trig="tit", dscr="ITalic Text", snippetType="autosnippet"},
+    fmta(
+      [[
+        \textit{<>} 
+      ]], 
+      { i(1) }
+    )
+  ),
+    
+
+    
+  
 --==========================
 --    OTHER ENVIRONMENTS
 --==========================
@@ -65,7 +166,7 @@ return{
     fmta(
       [[
         \chapter{<>}
-              
+
       ]], 
       { i(1) }
     ),
@@ -121,39 +222,5 @@ return{
   ),
   {condition = line_begin}
   ),
-
-
-
---==========================
---    MATH ENVIRONMENT 
---==========================
-  s({trig="mm", dscr="Inline math", snippetType="autosnippet"},
-    fmta(
-      [[
-        $ <> $ 
-      ]], 
-      { i(1) }
-    )
-  ),
-    
-  s({trig="nn", dscr="Equation environtment", snippetType="autosnippet"},
-    fmta(
-      [[
-        \begin{equation}
-          <>
-        \end{equation}
-      ]], 
-      { i(1) }
-    ),
-    {condition = line_begin}
-  ),
-
-
-  
-
-
-
-
-
 
 }

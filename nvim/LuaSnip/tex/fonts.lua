@@ -1,6 +1,31 @@
+local line_begin = require("luasnip.extras.expand_conditions").line_begin
+
+local in_mathzone = function()
+  return vim.fn['vimtex#syntax#in_mathzone']() == 1
+end
+
+local helpers=require('luasnip-helper-funcs')
+local get_visual = helpers.get_visual
 
 return{
 
+--==========================
+--          FONTS
+--==========================
+  s({trig="mcal", dscr="Mathcall", snippetType="autosnippet"},
+    fmta(
+      [[
+        \mathcal{<>} 
+      ]], 
+      { i(1) }
+    ), {condition = in_mathzone}
+  ),
+
+  s({trig="lll", dscr="l", snippetType="autosnippet"},
+    {t("\\ell")}
+  ),
+  
+    
 --==========================
 --     GREEK LETTERS
 --==========================
@@ -110,11 +135,6 @@ return{
   ),
   s({trig=";S", dscr="Sigma", snippetType="autosnippet"},
     {t("\\Sigma ")}
-  ),
-  
-
-  s({trig=";t", dscr="tau", snippetType="autosnippet"},
-    {t("\\tau ")}
   ),
   
 

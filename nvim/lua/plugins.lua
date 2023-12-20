@@ -152,12 +152,12 @@ return require('packer').startup(function(use)
     })
 
     -- Auto pairs
-    use({
-        "windwp/nvim-autopairs",
-        config = function()
-            require("configs.autopairs")
-        end,
-    })
+    --use({
+    --    "windwp/nvim-autopairs",
+    --    config = function()
+    --        require("configs.autopairs")
+    --    end,
+    --})
 
 
 
