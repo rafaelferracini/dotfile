@@ -10,9 +10,9 @@ local get_visual = helpers.get_visual
 return{
 
 --==========================
---    SINGLE CALCULUS
+--       INTEGRALS
 --==========================
-  s({trig="int", dscr="Indefinide Integral", snippetType="autosnippet"},
+  s({trig="int", dscr="Indefinide Single Integral", snippetType="autosnippet"},
     fmta(
       [[
         \int <>
@@ -22,7 +22,7 @@ return{
   ),
     
   
-  s({trig="dint", dscr="Definite Integral", snippetType="autosnippet"},
+  s({trig="dint", dscr="Definite Single Integral", snippetType="autosnippet"},
     fmta(
       [[
         \int_{<>}^{<>} 
@@ -30,6 +30,25 @@ return{
       { i(1), i(2) }
     ), {condition = in_mathzone}
   ),
+
+  s({trig="pint", dscr="Path Integral", snippetType="autosnippet"},
+    fmta(
+      [[
+        \int_{<>} 
+      ]], 
+      { i(1, "C") }
+    ), {condition = in_mathzone}
+  ),
+  
+  s({trig="oint", dscr="Closed Single Integral", snippetType="autosnippet"},
+    fmta(
+      [[
+        \oint_{<>} 
+      ]], 
+      { i(1, "C") }
+    ), {condition = in_mathzone}
+  ),
+    
     
 
 --==========================
