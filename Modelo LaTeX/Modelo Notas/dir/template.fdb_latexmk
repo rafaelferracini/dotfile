@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1702910706 "template.tex" "template.pdf" "template" 1702910711 0
+["pdflatex"] 1703116079 "template.tex" "template.pdf" "template" 1703116083 0
   "C:/Users/rafae/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1702910184 157441 630ac9bca0e616d740d6f31fad22d781 ""
   "C:/Users/rafae/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1702578546 11548 044497d0f2cc623a57009dd0d046a600 ""
   "C:/Users/rafae/AppData/Local/MiKTeX/fonts/pk/ljfour/public/cm/dpi1493/cmbcsc10.pk" 1702910197 33492 23234089ec85f77f566313ca5cc1bdf7 ""
@@ -307,15 +307,15 @@
   "C:/Users/rafae/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/rafae/AppData/Local/Programs/MiKTeX/tex/latex/xifthen/xifthen.sty" 1448274436 5689 1bfa68243e89a54479e7d0580773c57e ""
   "C:/Users/rafae/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
+  "dir/template.aux" 1703116082 2948 b964a40aa4ac2dc04b69565c2571631c "pdflatex"
+  "dir/template.toc" 1703116082 284 b499bea9fe8d300b1cc477e008ffd4b5 "pdflatex"
   "letterfonts.tex" 1702908900 8702 300377c5f733ebe6aa4b7f8e56db5921 ""
   "macros.tex" 1702908925 3477 93000260d2aea292d29c76d4ace77a29 ""
-  "preamble.tex" 1702910700 20856 bede5c0933d9c4af8cfdc7606a0dce23 ""
-  "template.aux" 1702910710 2948 b964a40aa4ac2dc04b69565c2571631c "pdflatex"
-  "template.tex" 1702910709 6876 3ff7b1cc916f93a70c54c1512ec0b877 ""
-  "template.toc" 1702910710 284 b499bea9fe8d300b1cc477e008ffd4b5 "pdflatex"
+  "preamble.tex" 1702934277 20856 684c47eed4bda4a7b72afe5bce950172 ""
+  "template.tex" 1703116068 6876 3ff7b1cc916f93a70c54c1512ec0b877 ""
   (generated)
-  "template.aux"
-  "template.log"
+  "dir/template.aux"
+  "dir/template.log"
+  "dir/template.toc"
   "template.pdf"
-  "template.toc"
   (rewritten before read)

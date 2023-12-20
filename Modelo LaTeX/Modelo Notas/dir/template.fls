@@ -1,7 +1,7 @@
-PWD C:\Users\rafae\Documents\Projetos\dotfile\Modelo LaTeX\Modelo Notas
+PWD C:\Users\rafae\Projetos\dotfile\Modelo LaTeX\Modelo Notas
 INPUT C:\Users\rafae\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
 INPUT template.tex
-OUTPUT template.log
+OUTPUT C:\Users\rafae\Projetos\dotfile\Modelo LaTeX\Modelo Notas\dir\template.log
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
@@ -305,7 +305,7 @@ INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryfadings.code.tex
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibraryfadings.code.tex
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibraryfadings.code.tex
-OUTPUT template.pdf
+OUTPUT C:\Users\rafae\Projetos\dotfile\Modelo LaTeX\Modelo Notas\dir\template.pdf
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcbposter.code.tex
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex\latex\varwidth\varwidth.sty
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex\latex\varwidth\varwidth.sty
@@ -388,10 +388,10 @@ INPUT .\letterfonts.tex
 INPUT .\letterfonts.tex
 INPUT .\letterfonts.tex
 INPUT letterfonts.tex
-INPUT .\template.aux
-INPUT .\template.aux
-INPUT template.aux
-OUTPUT template.aux
+INPUT C:\Users\rafae\Projetos\dotfile\Modelo LaTeX\Modelo Notas\dir\template.aux
+INPUT C:\Users\rafae\Projetos\dotfile\Modelo LaTeX\Modelo Notas\dir\template.aux
+INPUT C:\Users\rafae\Projetos\dotfile\Modelo LaTeX\Modelo Notas\dir\template.aux
+OUTPUT C:\Users\rafae\Projetos\dotfile\Modelo LaTeX\Modelo Notas\dir\template.aux
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex\latex\newpx\omlnpxmi.fd
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex\latex\newpx\omlnpxmi.fd
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex\latex\newpx\omlnpxmi.fd
@@ -471,15 +471,15 @@ INPUT C:\Users\rafae\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbcsc10.tfm
-INPUT .\template.toc
-INPUT .\template.toc
-INPUT template.toc
+INPUT C:\Users\rafae\Projetos\dotfile\Modelo LaTeX\Modelo Notas\dir\template.toc
+INPUT C:\Users\rafae\Projetos\dotfile\Modelo LaTeX\Modelo Notas\dir\template.toc
+INPUT C:\Users\rafae\Projetos\dotfile\Modelo LaTeX\Modelo Notas\dir\template.toc
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbcsc10.tfm
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbcsc10.tfm
-OUTPUT template.toc
+OUTPUT C:\Users\rafae\Projetos\dotfile\Modelo LaTeX\Modelo Notas\dir\template.toc
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
@@ -579,7 +579,7 @@ INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm100
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt8.tfm
 INPUT C:\Users\rafae\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx7.tfm
-INPUT template.aux
+INPUT C:\Users\rafae\Projetos\dotfile\Modelo LaTeX\Modelo Notas\dir\template.aux
 INPUT C:\Users\rafae\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\rafae\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\rafae\AppData\Local\MiKTeX\fonts\pk\ljfour\public\cm\dpi720\cmbcsc10.pk

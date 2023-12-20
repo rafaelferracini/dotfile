@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.14)  18 DEC 2023 11:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.14)  20 DEC 2023 20:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1396,7 +1396,8 @@ Package: bold-extra 2001/11/13 v0.1 Use fonts from cm/mf-extra/bold
 (C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titletoc.sty
 Package: titletoc 2023/10/27 v2.16 TOC entries
 \ttl@leftsep=\dimen331
-)) (macros.tex) (letterfonts.tex) (template.aux)
+)) (macros.tex) (letterfonts.tex)
+(C:\Users\rafae\Projetos\dotfile\Modelo LaTeX\Modelo Notas\dir\template.aux)
 \openout1 = `template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 11.
@@ -1566,7 +1567,7 @@ LaTeX Font Info:    Font shape `OT1/cmr/bx/sc' in size <24.88> not available
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-(template.toc
+(C:\Users\rafae\Projetos\dotfile\Modelo LaTeX\Modelo Notas\dir\template.toc
 LaTeX Font Info:    Font shape `OT1/cmr/bx/sc' in size <14.4> not available
 (Font)              Font shape `OT1/cmr/b/sc' tried instead on input line 1.
 
@@ -1601,7 +1602,8 @@ LaTeX Font Warning: Font shape `OT1/cmr/b/n' in size <5.5> not available
 ]
 \g__tikzsymbols_savebox_F_0 g 0 G_10_Laughey_1_none_none_box=\box145
  [3{C:/Users/rafae/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newpx/pxb-lms.
-enc}] [4] [5] (template.aux)
+enc}] [4] [5]
+(C:\Users\rafae\Projetos\dotfile\Modelo LaTeX\Modelo Notas\dir\template.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-10-10>
@@ -1613,8 +1615,8 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 37536 strings out of 474824
- 757096 string characters out of 5750976
+ 37537 strings out of 474824
+ 757402 string characters out of 5750976
  1949043 words of memory out of 5000000
  58730 multiletter control sequences out of 15000+600000
  603091 words of font info for 162 fonts, out of 8000000 for 9000
@@ -1651,7 +1653,8 @@ newpx/pxmiaX.pfb><C:/Users/rafae/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/newpx/pxsys.pfb><C:/Users/rafae/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/newtx/txexs.pfb><C:/Users/rafae/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/newtx/txsym.pfb>
-Output written on template.pdf (6 pages, 299495 bytes).
+Output written on "C:\Users\rafae\Projetos\dotfile\Modelo LaTeX\Modelo Notas\di
+r\template.pdf" (6 pages, 299495 bytes).
 PDF statistics:
  315 PDF objects out of 1000 (max. 8388607)
  48 named destinations out of 1000 (max. 500000)
