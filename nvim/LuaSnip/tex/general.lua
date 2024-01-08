@@ -124,6 +124,15 @@ return {
     {t("y_{j}")}, {condition = in_mathzone}
   ),
 
+  s({trig="x00", dscr="x_0", snippetType="autosnippet"},
+    {t("x_{0}")}, {condition = in_mathzone}
+  ),
+  
+  s({trig="y00", dscr="y_0", snippetType="autosnippet"},
+    {t("y_{0}")}, {condition = in_mathzone}
+  ),
+  
+
 --==========================
 --        PACKAGE
 --==========================

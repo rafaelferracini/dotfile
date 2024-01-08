@@ -51,6 +51,16 @@ return{
       { d(1, get_visual) }
     ), {condition = in_mathzone}
   ),
+
+  s({trig="vec", dscr="vec", snippetType="autosnippet"},
+    fmta(
+      [[
+        \vec{<>}
+      ]], 
+      { d(1, get_visual) }
+    ), {condition = in_mathzone}
+  ),
+    
     
     
 

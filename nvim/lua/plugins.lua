@@ -25,73 +25,11 @@ return require('packer').startup(function(use)
         requires = { "nvim-web-devicons" },
     })
 
-    -- Treesitter
-    use({
-        "nvim-treesitter/nvim-treesitter",
-        run = function()
-            require("nvim-treesitter.install").update({ with_sync = true })
-        end,
-        config = function()
-            require("configs.treesitter")
-        end,
-    })
-
-    use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" })
-
     -- Telescope
     use({
         "nvim-telescope/telescope.nvim",
         tag = "0.1.1",
         requires = { { "nvim-lua/plenary.nvim" } },
-    })
-
-    -- LSP
-    use({
-        "neovim/nvim-lspconfig",
-        config = function()
-            require("configs.lsp")
-        end,
-    })
-
-    use("onsails/lspkind-nvim")
-
-    -- cmp: Autocomplete
-    use({
-        "hrsh7th/nvim-cmp",
-        event = "InsertEnter",
-        config = function()
-            require("configs.cmp")
-        end,
-    })
-
-    use("hrsh7th/cmp-nvim-lsp")
-
-    use({ "hrsh7th/cmp-path", after = "nvim-cmp" })
-
-    use({ "hrsh7th/cmp-buffer", after = "nvim-cmp" })
-
-    -- LSP diagnostics, code actions, and more via Lua.
-    use({
-        "jose-elias-alvarez/null-ls.nvim",
-        config = function()
-            require("configs.null-ls")
-        end,
-        requires = { "nvim-lua/plenary.nvim" },
-    })
-
-    -- Mason: Portable package manager
-    use({
-        "williamboman/mason.nvim",
-        config = function()
-            require("mason").setup()
-        end,
-    })
-
-    use({
-        "williamboman/mason-lspconfig.nvim",
-        config = function()
-            require("configs.mason-lsp")
-        end,
     })
 
     -- File manager
@@ -143,13 +81,6 @@ return require('packer').startup(function(use)
     -- VimTex
     use "lervag/vimtex"
 
-    -- Markdown Preview
-    use({
-        "iamcco/markdown-preview.nvim",
-        run = function()
-            vim.fn["mkdp#util#install"]()
-        end,
-    })
 
     -- Auto pairs
     --use({
@@ -158,7 +89,4 @@ return require('packer').startup(function(use)
     --        require("configs.autopairs")
     --    end,
     --})
-
-
-
 end)

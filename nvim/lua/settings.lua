@@ -3,6 +3,9 @@
 local global = vim.g
 local o = vim.o
 
+
+global.loaded_netrw       = 1
+global.loaded_netrwPlugin = 1
 -- Map <leader>: Configura a tecla <leader> para " "
 
 global.mapleader = " "
