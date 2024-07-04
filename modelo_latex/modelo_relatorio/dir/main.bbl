@@ -1,0 +1,92 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{moyses2}{book}{}
+      \name{author}{1}{}{%
+        {{hash=84b46026d639a932b05870e4496968eb}{%
+           family={Nussenzveig},
+           familyi={N\bibinitperiod},
+           given={H.Moysés},
+           giveni={H\bibinitperiod}}}%
+      }
+      \name{editora}{1}{}{%
+        {{hash=cb762647e5de68aec9bc58b5848f162d}{%
+           family={Ltda},
+           familyi={L\bibinitperiod},
+           given={Edgard\bibnamedelima Blucher},
+           giveni={E\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{84b46026d639a932b05870e4496968eb}
+      \strng{fullhash}{84b46026d639a932b05870e4496968eb}
+      \strng{bibnamehash}{84b46026d639a932b05870e4496968eb}
+      \strng{authorbibnamehash}{84b46026d639a932b05870e4496968eb}
+      \strng{authornamehash}{84b46026d639a932b05870e4496968eb}
+      \strng{authorfullhash}{84b46026d639a932b05870e4496968eb}
+      \strng{editorabibnamehash}{cb762647e5de68aec9bc58b5848f162d}
+      \strng{editoranamehash}{cb762647e5de68aec9bc58b5848f162d}
+      \strng{editorafullhash}{cb762647e5de68aec9bc58b5848f162d}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{5° Ed}
+      \field{isbn}{978-85-212-0747-4}
+      \field{title}{Curso de Física Básica: Fluidos, Oscilações e Ondas, Calor}
+      \field{volume}{2}
+      \field{year}{2014}
+    \endentry
+    \entry{halliday4}{book}{}
+      \name{author}{1}{}{%
+        {{hash=da2f71d550e860ae9b658277d9dd1aca}{%
+           family={Walker},
+           familyi={W\bibinitperiod},
+           given={David\bibnamedelimb Halliday;\bibnamedelimb Robert\bibnamedelimb Resnick;\bibnamedelima Jean},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \name{editora}{1}{}{%
+        {{hash=521f46fd4a7aee3efec387c31967ba7f}{%
+           family={LTC},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{da2f71d550e860ae9b658277d9dd1aca}
+      \strng{fullhash}{da2f71d550e860ae9b658277d9dd1aca}
+      \strng{bibnamehash}{da2f71d550e860ae9b658277d9dd1aca}
+      \strng{authorbibnamehash}{da2f71d550e860ae9b658277d9dd1aca}
+      \strng{authornamehash}{da2f71d550e860ae9b658277d9dd1aca}
+      \strng{authorfullhash}{da2f71d550e860ae9b658277d9dd1aca}
+      \strng{editorabibnamehash}{521f46fd4a7aee3efec387c31967ba7f}
+      \strng{editoranamehash}{521f46fd4a7aee3efec387c31967ba7f}
+      \strng{editorafullhash}{521f46fd4a7aee3efec387c31967ba7f}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{10° Ed}
+      \field{isbn}{978-85-216-3210-8}
+      \field{title}{Fundamentos de Física: Óptica e Física Moderna}
+      \field{volume}{4}
+      \field{year}{2016}
+      \true{nocite}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

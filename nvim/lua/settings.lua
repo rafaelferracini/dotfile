@@ -16,7 +16,6 @@ global.maplocalleader = " "
 
 o.number = true -- Adiciona a numeração de linhas 
 o.relativenumber = true -- Faz com que a posição das linhas sejam mostradas relativamente a linha do cursos 
-o.syntax = true -- Habilita syntax highlight
 o.scrolloff = 8 -- Mínimo de linhas superiores e inferiores
 o.signcolumn = "yes" -- Adiciona uma coluna a esquerda. Util para linting
 o.cmdheight = 2 -- Configura a altura do prompt
