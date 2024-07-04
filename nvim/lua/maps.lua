@@ -29,6 +29,7 @@ map("n", "<leader>p", "<CMD>split<CR>")
 
 -- NeoTree
 map("n", "<leader>e", "<CMD>Neotree<CR>")
+map("n", "<leader>r", "<CMD>Neotree action=close<CR>")
 
 -- Buffer
 --map("n", "<TAB>", "<CMD>bnext<CR>") -- "Next Tab"
