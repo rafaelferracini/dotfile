@@ -112,9 +112,8 @@ return{
         \begin{figure}[<>]
           \centering
           \includegraphics[width=0.8\textwidth]{<>}
-          \caption{<>}
-          \label{fig:<>}
-        \end{figure}
+          \caption{\label{fig:<>} <>}
+          \end{figure}
 
       ]], 
       { i(1, "htb"), i(2), i(3), i(4) }
