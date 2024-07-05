@@ -77,9 +77,9 @@ return{
   s({trig="todo", dscr="TODO", snippetType="snippet"},
     fmta(
       [[
-        {\color{red} <>} <>
+        {\color{<>} <>} <>
       ]], 
-      { d(1, get_visual), i(2) }
+      { i(1, "red"), d(2, get_visual), i(3) }
     )
   ),
     
