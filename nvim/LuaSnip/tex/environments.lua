@@ -79,7 +79,7 @@ return{
       [[
         {\color{red} <>} <>
       ]], 
-      { i(1), i(2) }
+      { d(1, get_visual), i(2) }
     )
   ),
     
@@ -165,6 +165,16 @@ return{
       { i(1) }
     ), {condition = line_begin}
   ),
+
+  s({trig="ref", dscr="autoref", snippetType="snippet"},
+    fmta(
+      [[
+        \autoref{<>} <>
+      ]], 
+      { i(1), i(2) }
+    )
+  ),
+    
     
 
 
