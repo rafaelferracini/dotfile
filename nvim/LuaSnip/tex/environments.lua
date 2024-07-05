@@ -73,6 +73,16 @@ return{
 --==========================
 --         TEXT
 --==========================
+
+  s({trig="todo", dscr="TODO", snippetType="snippet"},
+    fmta(
+      [[
+        {\color{red} <>} <>
+      ]], 
+      { i(1), i(2) }
+    )
+  ),
+    
   s({trig="tt", dscr="Text", snippetType="autosnippet"},
     fmta(
       [[
