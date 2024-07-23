@@ -74,6 +74,16 @@ return{
 --         TEXT
 --==========================
 
+  s({trig="emph", dscr="Emphasize", snippetType="snippet"},
+    fmta(
+      [[
+        \emph{<>} <>
+      ]], 
+      { d(1, get_visual), i(2) }
+    )
+  ),
+    
+
   s({trig="todo", dscr="TODO", snippetType="snippet"},
     fmta(
       [[
