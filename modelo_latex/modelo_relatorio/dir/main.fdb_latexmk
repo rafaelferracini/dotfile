@@ -1,19 +1,19 @@
 # Fdb version 4
-["biber dir/main"] 1720135408 "dir/main.bcf" "dir/main.bbl" "dir/main" 1720135548 0
+["biber dir/main"] 1720135408 "dir/main.bcf" "dir/main.bbl" "dir/main" 1722352258 0
   "./aftertext/references.bib" 1720133285 1097 de38a6e142acf528dabca27d6ab0b21d ""
-  "dir/main.bcf" 1720135547 108653 d84b9fee56096ea2abf7a7f6812e5303 "pdflatex"
+  "dir/main.bcf" 1722352257 108653 d84b9fee56096ea2abf7a7f6812e5303 "pdflatex"
   (generated)
   "dir/main.bbl"
   "dir/main.blg"
   (rewritten before read)
-["makeindex dir/main.idx"] 1720135408 "dir/main.idx" "dir/main.ind" "dir/main" 1720135548 0
-  "dir/main.idx" 1720135546 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex dir/main.idx"] 1720135408 "dir/main.idx" "dir/main.ind" "dir/main" 1722352258 0
+  "dir/main.idx" 1722352256 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "dir/main.ilg"
   "dir/main.ind"
   (rewritten before read)
-["pdflatex"] 1720135544 "main.tex" "main.pdf" "main" 1720135548 2
-  "C:/Users/rafae/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1719575145 157441 630ac9bca0e616d740d6f31fad22d781 ""
+["pdflatex"] 1722352254 "main.tex" "main.pdf" "main" 1722352258 0
+  "C:/Users/rafae/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1721743225 157441 630ac9bca0e616d740d6f31fad22d781 ""
   "C:/Users/rafae/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1702577898 24175185 4243eb18ff2968674174671cff7aedcf ""
   "C:/Users/rafae/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
   "C:/Users/rafae/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc" 1256929440 3031 6c4d3515bf7115d8518af1c9ab97ca44 ""
@@ -345,21 +345,21 @@
   "chapters/3-materiais-e-metodos.tex" 0 -1 0 ""
   "chapters/4-resultados.tex" 0 -1 0 ""
   "chapters/5-conclusao.tex" 1720134786 24 aeca05d7a843d76e349aa7fc17991d8e ""
-  "dir/chapters/1-introducao.aux" 1720135547 6364 8ac865b5504a84389d1cfeae6599231b "pdflatex"
-  "dir/chapters/2-revisao-bibliografica.aux" 1720135547 5468 424a17deee945c8a975ba8d569dee75d "pdflatex"
+  "dir/chapters/1-introducao.aux" 1722352257 6365 8c10222221fef1c0e5578b14483e6e14 "pdflatex"
+  "dir/chapters/2-revisao-bibliografica.aux" 1722352257 5469 bbec66bf40c23aa3b019bd1e49c516f2 "pdflatex"
   "dir/chapters/2-revisao-bibliografica.tex" 0 -1 0 ""
-  "dir/chapters/3-materiais-e-metodos.aux" 1720135547 5466 35ecd25c957c08e1d81b3b6276d936f5 "pdflatex"
+  "dir/chapters/3-materiais-e-metodos.aux" 1722352257 5467 ebf80e7a2304812863057d2e8418862b "pdflatex"
   "dir/chapters/3-materiais-e-metodos.tex" 0 -1 0 ""
-  "dir/chapters/4-resultados.aux" 1720135547 5457 70f67e8aa45e0e430b73797cc25892f6 "pdflatex"
+  "dir/chapters/4-resultados.aux" 1722352257 5458 847824f2dce3face3ff044a3cebd2245 "pdflatex"
   "dir/chapters/4-resultados.tex" 0 -1 0 ""
-  "dir/chapters/5-conclusao.aux" 1720135547 5744 e7eacc6b5df03ac8068c366b5cc5aee3 "pdflatex"
-  "dir/main.aux" 1720135547 4415 4bdd406fe25911784f294816c8c4306f "pdflatex"
+  "dir/chapters/5-conclusao.aux" 1722352257 5745 75bf9d302e90bdb9f0b0ac4ddc96762f "pdflatex"
+  "dir/main.aux" 1722352257 4415 8150608048b189e8961f5b347a97c3a0 "pdflatex"
   "dir/main.bbl" 1720135448 3660 ab559d359637c4e3088e5b283aa156f8 "biber dir/main"
   "dir/main.ind" 1720135408 0 d41d8cd98f00b204e9800998ecf8427e "makeindex dir/main.idx"
-  "dir/main.run.xml" 1720135547 2419 c11a8a10576781858da5c09814bdc28e "pdflatex"
-  "dir/main.toc" 1720135547 1032 d25da62bb384ec31dc6950e365a72381 "pdflatex"
+  "dir/main.run.xml" 1722352257 2419 c11a8a10576781858da5c09814bdc28e "pdflatex"
+  "dir/main.toc" 1722352257 1032 d25da62bb384ec31dc6950e365a72381 "pdflatex"
   "images/teste.png" 1718327745 161012 43e8f7ff928d8f02345490867c21b8ba ""
-  "main.tex" 1720135544 4354 fae37199f99c634c7770dcdd06d5bc89 ""
+  "main.tex" 1722352233 4063 7ef73e719938785ab9c1aed4e92be8d4 ""
   "setup/setup.sty" 1720135395 8427 7bb580c81886548a380b8456c86d8e27 ""
   "setup/vertical_sigla_fundo_claro.pdf" 1717771763 51586 17e6b34529482ef5c908bfc04c901503 ""
   (generated)

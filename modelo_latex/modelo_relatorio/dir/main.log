@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.14)  4 JUL 2024 20:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.14)  30 JUL 2024 12:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1894,8 +1894,7 @@ Package biblatex Info: ... and expl3
 .sty
 Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 ))
-Package biblatex Info: Redefining '\cite' on input line 40.
-Package hyperref Info: Option `colorlinks' set `true' on input line 131.
+Package hyperref Info: Option `colorlinks' set `true' on input line 123.
 \main@idxfile=\write6
 \openout6 = `main.idx'.
 
@@ -1978,25 +1977,25 @@ apters/4-resultados.aux)
 apters/5-conclusao.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-Package hyperref Info: Link coloring ON on input line 147.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+Package hyperref Info: Link coloring ON on input line 139.
 \myptabbox=\box123
 \myptabboxwidth=\skip316
 
@@ -2038,12 +2037,12 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-LaTeX Info: Redefining \microtypecontext on input line 147.
-Package microtype Info: Applying patch `item' on input line 147.
-Package microtype Info: Applying patch `toc' on input line 147.
-Package microtype Info: Applying patch `eqnum' on input line 147.
-Package microtype Info: Applying patch `footnote' on input line 147.
-Package microtype Info: Applying patch `verbatim' on input line 147.
+LaTeX Info: Redefining \microtypecontext on input line 139.
+Package microtype Info: Applying patch `item' on input line 139.
+Package microtype Info: Applying patch `toc' on input line 139.
+Package microtype Info: Applying patch `eqnum' on input line 139.
+Package microtype Info: Applying patch `footnote' on input line 139.
+Package microtype Info: Applying patch `verbatim' on input line 139.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2),
 (microtype)             factor: 1100.
@@ -2051,7 +2050,7 @@ Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 10, shrink: 10, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 147.
+LaTeX Info: Redefining \showhyphens on input line 139.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -2068,7 +2067,7 @@ Package: ninecolors 2022-02-13 v2022D Select colors with proper color contrast
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 147.
+ on input line 139.
 
 
 (C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\tran
@@ -2077,7 +2076,7 @@ File: translations-basic-dictionary-brazil.trsl (brazil translation file `trans
 lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `brazil'. on input line 147.
+or `brazil'. on input line 139.
 
 (C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\tran
 slations-basic-dictionary-english.trsl
@@ -2085,16 +2084,16 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 147.
-LaTeX Info: Redefining \celsius on input line 147.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 147
+or `english'. on input line 139.
+LaTeX Info: Redefining \celsius on input line 139.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 139
 .
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 147.
-Package gensymb Info: Using \Omega for \ohm on input line 147.
+LaTeX Info: Redefining \ohm on input line 139.
+Package gensymb Info: Using \Omega for \ohm on input line 139.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -2134,8 +2133,8 @@ Package biblatex Info: ... file 'main.bbl' found.
 
 (C:\Users\rafae\Documents\Projetos\dotfile\modelo_latex\modelo_relatorio\dir\ma
 in.bbl)
-Package biblatex Info: Reference section=0 on input line 147.
-Package biblatex Info: Reference segment=0 on input line 147.
+Package biblatex Info: Reference section=0 on input line 139.
+Package biblatex Info: Reference segment=0 on input line 139.
  (beforetext/beforetext.tex
 <setup/vertical_sigla_fundo_claro.pdf, id=6, 327.2225pt x 449.68pt>
 File: setup/vertical_sigla_fundo_claro.pdf Graphic file (type pdf)
@@ -2235,19 +2234,6 @@ File: images/teste.png Graphic file (type png)
 <use images/teste.png>
 Package pdftex.def Info: images/teste.png  used on input line 8.
 (pdftex.def)             Requested size: 364.00139pt x 227.88719pt.
-
-
-chapters/1-introducao.tex:21: Package biblatex Error: Bibliography macro 'cite'
- undefined.
-
-See the biblatex package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21 ...ente colocaria em itálico) \cite{moyses2}
-                                                  
-Use '\newbibmacro' to define this macro.
-
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 24.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -2263,7 +2249,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.165   \include{chapters/1-introducao}
+l.157   \include{chapters/1-introducao}
                                         <./images/teste.png>]
 \openout2 = `chapters/2-revisao-bibliografica.aux'.
 
@@ -2293,7 +2279,7 @@ No file chapters/4-resultados.tex.
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-78.
+70.
 
 (C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -2334,13 +2320,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 61117 strings out of 474824
- 1378184 string characters out of 5750976
- 2428485 words of memory out of 5000000
- 82045 multiletter control sequences out of 15000+600000
+ 61118 strings out of 474824
+ 1378200 string characters out of 5750976
+ 2428523 words of memory out of 5000000
+ 82046 multiletter control sequences out of 15000+600000
  614066 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,12n,117p,2417b,2008s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 114i,12n,117p,2434b,2008s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/rafae/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
 b><C:/Users/rafae/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.p
 fb><C:/Users/rafae/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pf
@@ -2351,7 +2337,7 @@ C:/Users/rafae/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:
 /Users/rafae/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:
 /Users/rafae/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
 Output written on C:\Users\rafae\Documents\Projetos\dotfile\modelo_latex\modelo
-_relatorio\dir\main.pdf (8 pages, 432020 bytes).
+_relatorio\dir\main.pdf (8 pages, 432010 bytes).
 PDF statistics:
  170 PDF objects out of 1000 (max. 8388607)
  31 named destinations out of 1000 (max. 500000)

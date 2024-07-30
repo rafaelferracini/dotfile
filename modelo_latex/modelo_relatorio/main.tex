@@ -20,7 +20,7 @@
 % ---
 %   Bibliography setting
 % ---
-\usepackage[style=numeric-comp, hyperref]{biblatex}  % style=numeric-comp for numeric style
+\usepackage[backend = biber, style=numeric-comp, hyperref]{biblatex}  % style=numeric-comp for numeric style
 \setlength\bibitemsep{\baselineskip}
 \DeclareFieldFormat{url}{Disponível~em:\addspace\url{#1}}
 \NewBibliographyString{sineloco}
@@ -36,14 +36,6 @@
 % Custom citation style to make both name and date appear in blue
 \usepackage{xcolor}
 
-% Custom citation style to make both name and date appear in blue with black parentheses
-\DeclareCiteCommand{\cite}
-  {(\color{blue}\begingroup\usebibmacro{prenote}}
-  {\printtext[bibhyperref]{\color{blue}\usebibmacro{cite}}}
-  {\multicitedelim}
-  {\usebibmacro{postnote}\color{black})\endgroup}
-
-  
 \DeclareSourcemap{
   \maps[datatype=bibtex]{
     \map{
