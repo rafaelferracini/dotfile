@@ -64,7 +64,7 @@ return {
   s({trig="{}", dscr="left{ right}", snippetType="autosnippet"},
     fmta(
       [[
-        \left{ <> \right}
+        \left\{ <> \right\}
       ]], 
       { d(1, get_visual) }
     ), {condition = in_mathzone}
